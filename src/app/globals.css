@@ -1,3 +1,48 @@
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 100;
+  font-style: normal;
+  src:
+    url("../fonts/Metropolis-Thin.woff2") format("woff2"),
+    url("../fonts/Metropolis-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url("../fonts/Metropolis-Light.woff2") format("woff2"),
+    url("../fonts/Metropolis-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("../fonts/Metropolis-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("../fonts/Metropolis-Medium.woff2") format("woff2"),
+    url("../fonts/Metropolis-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 800;
+  font-style: normal;
+  src:
+    url("../fonts/Metropolis-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Metropolis-ExtraBold.woff") format("woff");
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,7 +64,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Metropolis, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,4 +84,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.no-break {
+  white-space: nowrap;
 }
