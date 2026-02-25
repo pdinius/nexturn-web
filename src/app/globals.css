@@ -44,13 +44,13 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #444;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #444;
     --foreground: #ededed;
   }
 }

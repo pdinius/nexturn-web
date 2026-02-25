@@ -6,10 +6,11 @@ import DeviceStlViewerDynamic from "@/components/DeviceStlViewerDynamic";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Header />
-      <main className={styles.main}>
+      <div className={styles.canvasWrapper}>
         <DeviceStlViewerDynamic />
-      </main>
+      </div>
+      <Header />
+      <main className={styles.main} />
       <Footer />
     </div>
   );
