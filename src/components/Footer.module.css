@@ -1,9 +1,9 @@
 .footer {
   position: relative;
   z-index: 1;
-  background-color: #333;
+  background-color: white;
   width: 100vw;
-  color: white;
+  color: #1d649f;
   padding: 1.5rem;
   flex-shrink: 0;
   margin-top: auto;
@@ -16,37 +16,9 @@
   position: absolute;
   right: 1.5rem;
   bottom: 1.5rem;
-  filter: brightness(0) invert(1);
   height: calc(100% + 50px - 3rem);
   width: auto;
   z-index: 1;
-}
-
-.logo {
-  position: absolute;
-  right: -20px;
-  bottom: 100%;
-  display: flex;
-  transform: skewX(-35deg);
-  height: 50px;
-}
-
-.leftLogoInner {
-  position: relative;
-  right: -1px;
-  background-color: #333;
-  height: 100%;
-  width: 50px;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
-}
-
-.rightLogoInner {
-  position: relative;
-  top: 1px;
-  background-color: #333;
-  width: 140px;
-  height: 100%;
 }
 
 .separator {
@@ -54,20 +26,22 @@
   height: 1px;
   width: 100px;
   margin: 0.5rem 0;
-  background-color: #999;
+  background-color: #1d649f;
 }
 
 .nexturn {
   letter-spacing: 10px;
   margin-right: -10px;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
+  color: #1d649f;
 }
 
 .copyright {
   font-size: 14px;
   font-weight: 400;
-  color: #999;
+  color: #1d649f;
+  text-align: right;
 }
 
 .footerContent {
@@ -78,5 +52,11 @@
 }
 
 .copyright {
-  text-align: right;
+  opacity: 0.7;
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
 }

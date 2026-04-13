@@ -15,7 +15,7 @@ export default function NexTurnDeviceIcon({
 
   return (
     <svg width={size} height={size} viewBox="0 0 32 32">
-      {/* Device body - rounded square */}
+      {/* Device */}
       <rect
         x="2"
         y="2"

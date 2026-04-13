@@ -1,33 +1,15 @@
 import Image from "next/image";
+import { CURVE_OFFSET, CURVE_SIZE } from "@/shared/consts";
 import styles from "./Footer.module.css";
+import NexTurnLogo from "./NexTurnLogo";
 
 export default function Footer() {
-  const curveSize = 15;
-  const curveDimension = 50;
-
   return (
     <footer className={styles.footer}>
-      <Image
-        src="/nexturn.svg"
-        alt="Nexturn"
-        width={150}
-        height={263}
-        className={styles.footerLogo}
-      />
-      <div className={styles.logo}>
-        <div
-          className={styles.leftLogoInner}
-          style={{
-            clipPath: `path("M 0 ${curveDimension} h ${
-              curveDimension - curveSize
-            } a ${curveSize},${curveSize} 0,0,0 ${curveSize},-${curveSize} h 1 v ${curveSize} Z")`,
-          }}
-        ></div>
-        <div
-          className={styles.rightLogoInner}
-          style={{ borderTopLeftRadius: curveSize }}
-        ></div>
-      </div>
+      <NexTurnLogo className={styles.footerLogo} />
+      <svg viewBox="0 0 300 100" height="50" className={styles.logoContainer}>
+        <path d={`M ${CURVE_OFFSET} 100 c ${CURVE_SIZE} 0 ${100 - CURVE_SIZE} -100 100 -100 H 300 v 100 Z`} fill="white" />
+      </svg>
       <div className={styles.footerContent}>
         <div className={styles.nexturn}>NEXTURN</div>
         <hr className={styles.separator} />

@@ -1,0 +1,38 @@
+.section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--band-bg);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--section-padding-bottom, var(--curve-height));
+}
+
+.wave {
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: -2px;
+  height: var(--curve-height);
+  color: var(--band-bg);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+}
+
+.waveReverse {
+  transform: scaleX(-1);
+  transform-origin: center center;
+}
+
+.wavePath {
+  fill: currentColor;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
